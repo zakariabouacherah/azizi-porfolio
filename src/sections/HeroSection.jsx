@@ -41,38 +41,40 @@ const HeroSection = () => {
           </div>
         </div>
         <Divider className="border-secondary/30" />
-        <div className="flex items-center gap-3 text-secondary ">
-          <a
-            href="https://www.linkedin.com/in/ikram-azizi-997339215"
-            target="_blank"
-            className="text-3xl"
-          >
-            <TbBrandLinkedin />
-          </a>
-          <a
-            href="mailto:aziziikram2001@gmail.com"
-            target="_blank"
-            className="text-3xl"
-          >
-            <TbBrandGmail />
-          </a>
-          <a
-            href="https://instagram.com/ikram__az_?igshid=MzRlODBiNWFlZA=="
-            target="_blank"
-            className="text-3xl"
-          >
-            <TbBrandInstagram />
-          </a>
-        </div>
-        <div className="mt-6">
-          <a
-            href={cv}
-            download={"CV Azizi Ikram"}
-            target="_blank"
-            className="py-3 px-6 border-[1px] border-secondary rounded-full hover:bg-secondary hover:shadow-2xl hover:shadow-secondary transition"
-          >
-            Telecharger mon cv
-          </a>
+        <div className="space-y-8">
+          <div className="flex items-center gap-3 text-secondary ">
+            <a
+              href="https://www.linkedin.com/in/ikram-azizi-997339215"
+              target="_blank"
+              className="text-3xl"
+            >
+              <TbBrandLinkedin />
+            </a>
+            <a
+              href="mailto:aziziikram2001@gmail.com"
+              target="_blank"
+              className="text-3xl"
+            >
+              <TbBrandGmail />
+            </a>
+            <a
+              href="https://instagram.com/ikram__az_?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+              className="text-3xl"
+            >
+              <TbBrandInstagram />
+            </a>
+          </div>
+          <div className="mt-6">
+            <a
+              href={cv}
+              download={"CV Azizi Ikram"}
+              target="_blank"
+              className="py-3 px-6 border-[1px] border-secondary rounded-full hover:bg-secondary hover:shadow-2xl hover:shadow-secondary transition"
+            >
+              Telecharger mon cv
+            </a>
+          </div>
         </div>
       </div>
       <div className="">

@@ -97,7 +97,7 @@ const Competences = () => {
         <Heading label={"Compétences"} />
       </div>
       <div className="lg:w-2/3 w-full font-sans">
-        <Collapse accordion items={items} className="" />
+        <Collapse accordion items={items} className="bg-primary text-white" />
       </div>
     </div>
   );
