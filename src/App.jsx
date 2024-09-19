@@ -4,6 +4,7 @@ import HeroSection from "./sections/HeroSection";
 import Apropos from "./sections/Apropos";
 import Competences from "./sections/Competences";
 import Annexes from "./sections/Annexes";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Apropos />
       <Competences />
       <Annexes />
+      <Contact />
     </div>
   );
 }

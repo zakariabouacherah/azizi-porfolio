@@ -91,13 +91,13 @@ const Competences = () => {
   return (
     <div
       id="compétences"
-      className="max-w-screen-xl items-center flex flex-col gap-12 mx-auto p-4 pb-16"
+      className="max-w-screen-xl items-center flex flex-col gap-12 mx-auto p-4 py-16"
     >
       <div>
         <Heading label={"Compétences"} />
       </div>
       <div className="lg:w-2/3 w-full font-sans">
-        <Collapse accordion items={items} className="bg-primary text-white" />
+        <Collapse accordion items={items} className="bg-white font-sans" />
       </div>
     </div>
   );
