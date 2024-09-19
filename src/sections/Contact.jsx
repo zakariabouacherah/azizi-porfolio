@@ -20,7 +20,7 @@ const Contact = () => {
           Je serais ravie d'échanger avec vous ! Pour toute question ou
           opportunité, n’hésitez pas à me contacter
         </div>
-        <div className="w-2/3 bg-white text-forBg flex flex-col items-center gap-5 py-4 rounded-xl shadow-2xl shadow-white/40">
+        <div className="lg:w-2/3 w-full bg-white text-forBg flex flex-col items-center gap-5 py-4 rounded-xl shadow-2xl shadow-white/40">
           <div>
             <span className="font-bold">Email: </span>
             <span>aziziikram2001@gmail.com</span>

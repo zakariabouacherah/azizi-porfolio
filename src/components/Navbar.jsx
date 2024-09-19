@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
+  console.log(isOpen);
   return (
     // <nav className="bg-[#e8e8e8] border-gray-200 fixed top-0 left-0 w-full z-50">
     //   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -81,14 +88,18 @@ const Navbar = () => {
     // </nav>
 
     <nav className=" bg-slate-600/20 fixed top-0 left-0 w-full backdrop-blur-lg z-50">
-      <div className="flex items-center justify-between max-w-screen-xl mx-auto p-4">
+      <div className="flex items-center justify-between max-w-screen-xl mx-auto p-4 ">
         <div className="text-secondary font-bold text-2xl cursor-pointer">
           <a href="#" className="drop-shadow-xl shadow-secondary">
             AI
           </a>
         </div>
-        <div>
-          <ul className="flex items-center gap-6 text-lg capitalize">
+        <div className="lg:block relative ">
+          <ul
+            className={`flex items-center flex-col justify-center lg:flex-row gap-6 text-lg capitalize lg:top-0 lg:bg-transparent absolute bottom-16 translate-x-[-50%] left-1 w-screen lg:w-full lg:h-auto h-screen lg:relative bg-black transition-transform duration-500  ${
+              isOpen ? "translate-y-full " : ""
+            }`}
+          >
             <li className="hover:text-secondary transition">
               <a href="#"> Accueil</a>
             </li>
@@ -105,6 +116,12 @@ const Navbar = () => {
               <a href="#contact"> Contact</a>
             </li>
           </ul>
+        </div>
+        <div
+          className="block lg:hidden cursor-pointer text-3xl z-30"
+          onClick={toggleMenu}
+        >
+          {isOpen ? <GrClose /> : <HiOutlineMenuAlt3 />}
         </div>
       </div>
     </nav>

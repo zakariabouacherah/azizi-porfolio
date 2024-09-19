@@ -93,7 +93,7 @@ const Apropos = () => {
       ),
       children: (
         <div className="text-lg font-semibold uppercase">
-          SERVICE INSPECTION ET qualité / groupe elec
+          technicienne de maintenance electrique / groupe elec
         </div>
       ),
       color: "#26436c",
@@ -102,7 +102,7 @@ const Apropos = () => {
       label: <div className="text-secondary text-lg pl-2">23/05/2022</div>,
       children: (
         <div className="text-lg font-semibold uppercase">
-          Design mécanique / CAPGEMINI ENGINEERING
+          consultante CAD / CAPGEMINI ENGINEERING
         </div>
       ),
       color: "#26436c",
