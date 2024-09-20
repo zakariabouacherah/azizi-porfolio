@@ -97,22 +97,37 @@ const Navbar = () => {
         <div className="lg:block relative ">
           <ul
             className={`flex items-center flex-col justify-center lg:flex-row gap-6 text-lg capitalize lg:top-0 lg:bg-transparent absolute bottom-16 translate-x-[-50%] left-1 w-screen lg:w-full lg:h-auto h-screen lg:relative bg-black transition-transform duration-500  ${
-              isOpen ? "translate-y-full " : ""
+              isOpen ? "translate-y-full lg:translate-y-0 " : ""
             }`}
           >
-            <li className="hover:text-secondary transition">
+            <li
+              onClick={toggleMenu}
+              className="hover:text-secondary transition"
+            >
               <a href="#"> Accueil</a>
             </li>
-            <li className="hover:text-secondary transition">
+            <li
+              onClick={toggleMenu}
+              className="hover:text-secondary transition"
+            >
               <a href="#a-propos"> à propos</a>
             </li>
-            <li className="hover:text-secondary transition">
+            <li
+              onClick={toggleMenu}
+              className="hover:text-secondary transition"
+            >
               <a href="#compétences"> Compétences</a>
             </li>
-            <li className="hover:text-secondary transition">
+            <li
+              onClick={toggleMenu}
+              className="hover:text-secondary transition"
+            >
               <a href="#annexes"> Annexes</a>
             </li>
-            <li className="hover:text-secondary transition">
+            <li
+              onClick={toggleMenu}
+              className="hover:text-secondary transition"
+            >
               <a href="#contact"> Contact</a>
             </li>
           </ul>
